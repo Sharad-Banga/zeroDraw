@@ -1,0 +1,15 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "composite": true,
+    "declaration": true,
+    "incremental": true,
+
+    "types": ["node"],
+    "lib": ["es2022"]
+  },
+  "include": ["src", "drizzle.config.ts"]
+}
